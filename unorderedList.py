@@ -20,3 +20,22 @@ class UnorderedList:
             current = current.get_next()
 
         return count
+
+    def search(self,item):
+        current = self.head
+        found = False
+        while current is not None and found is False:
+            if current.get_data() is item:
+                found = True
+            else:
+                current = current.get_next()
+
+        return found
+
+mylist = UnorderedList()
+mylist.add(1)
+mylist.add(2)
+mylist.add(3)
+mylist.add(4)
+print(mylist.search(5))
+
