@@ -19,6 +19,7 @@ class Stack:
 
 tryList = []
 print(tryList.__eq__([]))
+print(tryList)
 
 tryStack = Stack()
 print(tryStack.is_empty())
