@@ -8,7 +8,7 @@ class Stack:
     def peek(self):
         return self.item[len(self.item) - 1]
 
-    def push(self,item):
+    def push(self, item):
         self.item.append(item)
 
     def is_empty(self):
