@@ -19,7 +19,7 @@ def ways(n, mem = None):
     mem[n] = 1
     for i in range(1, n):
         if mem[i] is None:
-            (w) = ways(i)
+            (w) = ways(i//2)
         else:
             w = mem[i]
             c = 0
@@ -29,7 +29,19 @@ def ways(n, mem = None):
 
 print(ways(4))
 print("-")
+'''
+8 = 8
 
+8 = 7 + 1
+
+8 = 6 + 2
+
+8 = 5 + 3
+8 = 5 + 2 + 1
+
+8 = 4 + 3 + 1
+
+'''
 
 def count(n):
     cl = [None] * (n + 1)
@@ -47,3 +59,14 @@ print(count(3))
 print(count(4))
 print(count(5))
 print(count(6))
+
+
+def compare():
+    weight = [50,10,12,65,40,95,100,12,20,30]
+    memo = [0] * len(weight)
+    index_i = 0
+    for number in weight[index_i,index_i + 3]:
+        if weight[number] > weight[number + 1]:
+
+
+compare()
