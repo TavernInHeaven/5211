@@ -5,3 +5,4 @@ def recursion(number):
         recursion(number // 2)
 
 print(recursion(5))
+
