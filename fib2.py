@@ -22,3 +22,18 @@ def fib3(n,l = None):
     return f
 
 print(fib3(3))
+
+def fib(n, l = None):
+    if l is None:
+        l = [None] * max(3, n + 1)
+        l[0] = 3
+        l[1] = 5
+        l[2] = 8
+
+    if l[n] is None:
+        l[n] = 2 * l[n - 2] + l[n - 3]
+    return l[n]
+
+
+
+print(fib(4))
