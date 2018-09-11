@@ -19,4 +19,3 @@ class Deque:
 
     def remove_rear(self):
         self.item.pop()
-
